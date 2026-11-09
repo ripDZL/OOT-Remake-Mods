@@ -233,7 +233,7 @@ h1 em { display: block; color: var(--gold); }
 .speed-visual {
   display: flex;
   align-items: center;
-  padding-bottom: 24px;
+  padding-bottom: 36px;
   padding-inline: 7%;
   background:
     radial-gradient(ellipse at 80% 55%, #485b2e80, transparent 68%),
