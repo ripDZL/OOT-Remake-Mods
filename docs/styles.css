@@ -20,7 +20,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; }
 p, h1, h2, h3, figure { margin: 0; }
 strong { color: var(--ink); }
-a:focus-visible {
+a:focus-visible, button:focus-visible {
   outline: 2px solid #ffe0a1;
   outline-offset: 5px;
 }
@@ -345,6 +345,53 @@ h1 em { display: block; color: var(--gold); }
 .install-detail strong { margin-inline-end: 6px; }
 code { color: var(--green); }
 
+.support {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  align-items: center;
+  gap: 18px 28px;
+  scroll-margin-top: 22px;
+  margin-bottom: 48px;
+  padding: clamp(18px, 3vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: linear-gradient(110deg, #22271c, var(--panel) 64%);
+}
+.support h2 { font-size: clamp(1.8rem, 3vw, 2.5rem); }
+.support-intro p { margin-top: 9px; color: var(--muted); font-size: .9rem; }
+.support-address-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+.support-address-row code {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--background);
+  color: var(--ink);
+  font-size: .85rem;
+  overflow-wrap: anywhere;
+  user-select: all;
+}
+.button-copy {
+  padding-inline: 11px;
+  border-color: #6e5837;
+  background: #272319;
+  color: var(--gold);
+  font-family: inherit;
+  font-size: .82rem;
+  cursor: pointer;
+}
+.button-copy:hover { background: #383021; }
+.button-copy[hidden] { display: none; }
+.copy-status { margin-top: 5px; color: var(--muted); font-size: .8rem; }
+.copy-status:empty { margin-top: 0; }
+
 .site-footer { padding-block: 22px; border-top: 1px solid var(--line); background: #151a15; color: var(--subtle); font-size: .8rem; }
 .footer-title { margin-bottom: 3px; color: var(--ink); font-weight: 700; }
 .footer-title span { color: var(--gold); }
@@ -373,6 +420,7 @@ code { color: var(--green); }
   .steps { grid-template-columns: 1fr; }
   .steps li + li { border-inline-start: 0; border-top: 1px solid var(--line); }
   .catalog { padding-block: 38px 42px; }
+  .support { grid-template-columns: 1fr; margin-bottom: 36px; }
 }
 
 @media (max-width: 599px) {

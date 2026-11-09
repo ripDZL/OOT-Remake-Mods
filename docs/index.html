@@ -10,7 +10,8 @@
   <meta property="og:description" content="Gameplay mods for the Switch 2 remake, with direct downloads and a quick install guide.">
   <meta property="og:image" content="https://ripdzl.github.io/OOT-Remake-Mods/assets/kakariko.webp">
   <link rel="icon" href="assets/waypoint.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
+  <script src="support.js" defer></script>
   <title>Ocarina of Time Remake Mods</title>
 </head>
 <body>
@@ -26,6 +27,10 @@
     </symbol>
     <symbol id="play" viewBox="0 0 24 24">
       <path d="m8 5 12 7-12 7Z" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="copy" viewBox="0 0 24 24">
+      <rect x="8" y="8" width="12" height="12" rx="2"/>
+      <path d="M16 5V4H6a2 2 0 0 0-2 2v10h1"/>
     </symbol>
   </svg>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -158,6 +163,21 @@
       <div class="install-detail">
         <p><strong>Folder layout</strong> <code>Mod Data Location / Mod Name / exefs / &lt;build-id&gt;.ips</code></p>
         <p>To uninstall, close the game and remove the named mod folder.</p>
+      </div>
+    </section>
+
+    <section class="support" id="support" aria-labelledby="support-title">
+      <div class="support-intro">
+        <h2 id="support-title">Support the project</h2>
+        <p>All mods are free to download. If you’d like to support the project, you can leave an optional Bitcoin tip.</p>
+      </div>
+      <div class="support-payment">
+        <p class="eyebrow">Bitcoin (BTC) address</p>
+        <div class="support-address-row">
+          <code id="btc-address" dir="ltr">bc1q0q6zx4hhnmhqfs4qxc2xayrfr5d9z8ukxezawu</code>
+          <button class="button button-copy" id="copy-address" type="button" hidden><svg class="icon" aria-hidden="true"><use href="#copy"/></svg> Copy address</button>
+        </div>
+        <p class="copy-status" id="copy-status" role="status"></p>
       </div>
     </section>
   </main>
