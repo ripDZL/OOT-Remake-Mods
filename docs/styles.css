@@ -198,12 +198,42 @@ h1 em { display: block; color: var(--gold); }
   border-radius: 12px;
   background: var(--panel);
 }
-.card-visual { aspect-ratio: 16 / 8; overflow: hidden; border-bottom: 1px solid var(--line); background: #252e20; }
-.card-visual img { width: 100%; height: 100%; object-fit: cover; }
-.speed-visual {
+.card-visual {
   position: relative;
+  display: block;
+  aspect-ratio: 16 / 8;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background: #252e20;
+  text-decoration: none;
+}
+.card-visual img { width: 100%; height: 100%; object-fit: cover; }
+.card-visual:focus-visible { outline-offset: -4px; }
+.watch-badge {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border: 1px solid #ffffff4d;
+  border-radius: 5px;
+  background: #151a15;
+  color: var(--ink);
+  font-size: .73rem;
+  font-weight: 750;
+}
+.card-visual:hover .watch-badge, .card-visual:focus-visible .watch-badge {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: #261d10;
+}
+.speed-visual {
   display: flex;
   align-items: center;
+  padding-bottom: 24px;
   padding-inline: 7%;
   background:
     radial-gradient(ellipse at 80% 55%, #485b2e80, transparent 68%),
