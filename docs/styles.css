@@ -188,6 +188,8 @@ h1 em { display: block; color: var(--gold); }
 }
 .section-heading h2 { margin-top: 9px; font-size: clamp(2.35rem, 4vw, 3.35rem); }
 .releases-link { color: var(--gold); white-space: nowrap; }
+.catalog-note { margin-bottom: 18px; color: var(--muted); font-size: .9rem; }
+.catalog-note .text-link { display: inline; }
 .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
 .mod-card {
   display: flex;
@@ -293,24 +295,59 @@ h1 em { display: block; color: var(--gold); }
 .card-body h3 { font-size: clamp(1.15rem, 2vw, 1.35rem); letter-spacing: -.025em; line-height: 1.25; }
 .card-body > p:not(.card-meta) { margin-block: 9px 18px; color: var(--muted); font-size: .9rem; }
 .card-actions {
-  justify-content: space-between;
-  gap: 4px 8px;
+  display: grid;
+  gap: 6px;
   margin-top: auto;
   padding-top: 12px;
   border-top: 1px solid var(--line);
 }
 .card-actions .text-link { gap: 3px; font-size: .78rem; white-space: nowrap; }
+.platform-downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+.platform-downloads .button { justify-content: center; }
 .button-download { gap: 6px; padding-inline: 9px; background: var(--green); color: #192414; font-size: .82rem; }
 .button-download:hover { background: #d0e8b7; }
+.button-test { grid-column: 1 / -1; border-color: #ad864e; background: transparent; color: var(--gold); }
+.button-test:hover { background: #3b3021; }
+
+.community { padding-block: 30px 40px; border-top: 1px solid var(--line); }
+.community-list { margin: 0; padding: 0; list-style: none; }
+.community-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 20px;
+  padding-block: 12px;
+}
+.community-list li + li { border-top: 1px solid var(--line); }
+.community-list p { max-width: 64ch; margin-top: 4px; color: var(--muted); font-size: .87rem; }
+.community-links, .install-links { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; }
+.community-links .text-link, .install-links .text-link { font-size: .87rem; }
 
 .install { padding-block: 36px 54px; border-top: 1px solid var(--line); }
 .install .section-heading { margin-bottom: 13px; }
 .install-requirements { color: var(--muted); }
+.install-links { margin-top: 9px; }
+.guide-heading { margin-block: 18px 8px; font-size: 1.1rem; scroll-margin-top: 22px; }
+.platform-guide {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  padding: 16px 20px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--muted);
+  font-size: .87rem;
+}
+.platform-guide ol { margin: 0; padding-inline-start: 20px; }
+.platform-guide code { overflow-wrap: anywhere; }
+.platform-guide .text-link { display: inline; }
 .steps {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   counter-reset: step;
-  margin: 24px 0 0;
+  margin: 0;
   padding: 0;
   border: 1px solid var(--line);
   border-radius: 10px 10px 0 0;
