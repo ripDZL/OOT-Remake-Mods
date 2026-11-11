@@ -190,7 +190,7 @@ h1 em { display: block; color: var(--gold); }
 .releases-link { color: var(--gold); white-space: nowrap; }
 .catalog-note { margin-bottom: 18px; color: var(--muted); font-size: .9rem; }
 .catalog-note .text-link { display: inline; }
-.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .mod-card {
   display: flex;
   flex-direction: column;
@@ -303,10 +303,10 @@ h1 em { display: block; color: var(--gold); }
 }
 .card-actions .text-link { gap: 3px; font-size: .78rem; white-space: nowrap; }
 .platform-downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
-.platform-downloads .button { justify-content: center; }
+.platform-downloads .button { justify-content: center; text-align: center; white-space: normal; }
 .button-download { gap: 6px; padding-inline: 9px; background: var(--green); color: #192414; font-size: .82rem; }
 .button-download:hover { background: #d0e8b7; }
-.button-test { grid-column: 1 / -1; border-color: #ad864e; background: transparent; color: var(--gold); }
+.button-test { border-color: #ad864e; background: transparent; color: var(--gold); }
 .button-test:hover { background: #3b3021; }
 
 .community { padding-block: 30px 40px; border-top: 1px solid var(--line); }

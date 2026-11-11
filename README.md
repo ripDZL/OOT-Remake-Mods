@@ -2,7 +2,7 @@
 
 Gameplay mods for the Nintendo Switch 2 remake, game version **1.1.1**.
 
-Each gameplay mod has separate **Lichii**, **Hookshot**, and **Switch 2 hardware test** ZIPs. The Windows mod manager detects the installed Hookshot Builder and rebuilds enabled code mods after a Hookshot update. Switch 2 packages require ns2jb-modloader and a compatible exploit session. Physical console compatibility is unverified.
+Emulator downloads were tested on **Lichii build 150** and **Fritchii v5.8.4**. Mask Menu Unlock has a separate ZIP for each emulator. The catalog also has **Hookshot** and **Switch 2 hardware test** ZIPs for Songbook Autoplay, Classic Ledge Jump, and Bunny Hood Speed Boost. Physical console compatibility is unverified.
 
 - [Download mods and see installation instructions](https://ripdzl.github.io/OOT-Remake-Mods/)
 - [Release notes and ZIP files](https://github.com/ripDZL/OOT-Remake-Mods/releases)
