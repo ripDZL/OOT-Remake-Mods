@@ -6,6 +6,7 @@ Emulator downloads were tested on **Lichii build 150** and **Fritchii v5.8.4**. 
 
 - [Download mods and see installation instructions](https://ripdzl.github.io/OOT-Remake-Mods/)
 - [Release notes and ZIP files](https://github.com/ripDZL/OOT-Remake-Mods/releases)
+- [Triforce Mod Manager for Windows](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.1)
 - [Hookshot Mod Manager for Windows](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
 - [Report an issue](https://github.com/ripDZL/OOT-Remake-Mods/issues)
 
