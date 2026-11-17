@@ -1,0 +1,58 @@
+name: Bug report
+description: Report a problem with a mod or a Windows mod manager.
+title: "[Bug] "
+body:
+  - type: input
+    id: download
+    attributes:
+      label: Mod or manager version
+      description: Include the ZIP filename if you have it.
+      placeholder: "Lens and Mask v1.0.1, Triforce ZIP"
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Triforce
+        - Hookshot
+        - Lichii
+        - Fritchii
+        - Switch 2 hardware test
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: versions
+    attributes:
+      label: Game version and platform build
+      placeholder: "OoT 1.1.1, Triforce v0.4.0"
+    validations:
+      required: true
+  - type: textarea
+    id: mods
+    attributes:
+      label: Other enabled mods
+      description: Include their versions and load order if relevant. Enter "None" if this was the only mod enabled.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the in-game location, character age, and inputs when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+      description: Include any error message or crash text verbatim.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or logs
+      description: Optional. Remove personal information before attaching logs.

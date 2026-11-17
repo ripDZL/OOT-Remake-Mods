@@ -37,13 +37,23 @@ Use **game version 1.1.1** and choose the ZIP for your platform from the [mod ca
 - **Lichii and Fritchii.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
 - **Switch 2 hardware tests.** Select releases have dedicated test ZIPs. Physical console compatibility is unverified. [Hardware test guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-switch-2)
 
-### Compatibility
+## Compatibility
 
-Lens and Mask v1.0.1 works alongside Mask Menu Unlock v1.0.2 and Classic Ledge Jump. The Lens and Mask and Mask Menu Unlock packages were tested on **Triforce v0.4.0**, **Hookshot v2.3.2**, **Lichii build 316**, and **Fritchii v5.8.4**. For other mods, use the platform and build shown on the download card.
+| Mod | Triforce | Hookshot | Lichii | Fritchii | Switch 2 |
+| :-- | :-- | :-- | :-- | :-- | :-- |
+| Lens and Mask v1.0.1 | Gameplay · 0.4.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
+| Mask Menu Unlock v1.0.2 | Gameplay · 0.4.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
+| Classic Ledge Jump v1.1.0 test | Launch · 0.4.0 | Gameplay · 2.0.11 | Gameplay · 125, load · 150 | Load · 5.8.4 | Hardware test |
+| Bunny Hood Speed Boost r2 | Launch · 0.4.0 | Gameplay · 2.0.11 | Gameplay · 95, load · 150 | Load · 5.8.4 | Hardware test |
+| Songbook Autoplay v1.0.2 | Launch · 0.4.0 | Gameplay · 2.0.11 | Gameplay · 117/125, load · 150 | Load · 5.8.4 | Hardware test |
+
+**Gameplay** means the mod's feature was exercised. **Launch** or **load** means the game ran with the patch enabled. **Hardware test** means a test ZIP is available and physical console compatibility is unverified. **—** means there is no hardware test ZIP.
+
+Lens and Mask v1.0.1 and Mask Menu Unlock v1.0.2 were tested together with Classic Ledge Jump enabled. The release notes describe the scope of each test.
 
 ## Report an issue
 
-Include the mod version, platform and build, other enabled mods, and steps to reproduce. [Open an issue](https://github.com/ripDZL/OOT-Remake-Mods/issues)
+Include the mod version, platform build, other enabled mods, and steps to reproduce. [File a bug report](https://github.com/ripDZL/OOT-Remake-Mods/issues/new?template=bug-report.yml)
 
 ---
 
