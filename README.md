@@ -2,7 +2,7 @@
 
 Gameplay mods for the Nintendo Switch 2 remake, game version **1.1.1**.
 
-[Lens and Mask v1.0.0](https://ripdzl.github.io/OOT-Remake-Mods/#lens-and-mask) lets you toggle a mask while the Lenses of Truth stay active. The release has separate ZIPs tested on **Lichii build 316**, **Fritchii v5.8.4**, and **Triforce v0.4.0**.
+[Lens and Mask v1.0.1](https://ripdzl.github.io/OOT-Remake-Mods/#lens-and-mask) lets you toggle a mask while the Lenses of Truth stay active. It works alongside [Mask Menu Unlock v1.0.2](https://ripdzl.github.io/OOT-Remake-Mods/#mask-menu-unlock) and Classic Ledge Jump. Both updated mods have separate ZIPs tested on **Triforce v0.4.0**, **Hookshot v2.3.2**, **Lichii build 316**, and **Fritchii v5.8.4**.
 
 Earlier emulator downloads were tested on **Lichii build 150** and **Fritchii v5.8.4**. The catalog also has **Hookshot** and **Switch 2 hardware test** ZIPs for Songbook Autoplay, Classic Ledge Jump, and Bunny Hood Speed Boost. Physical console compatibility is unverified.
 
