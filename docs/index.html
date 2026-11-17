@@ -76,8 +76,28 @@
         </div>
         <a class="text-link releases-link" href="https://github.com/ripDZL/OOT-Remake-Mods/releases">All releases <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
       </div>
-      <p class="catalog-note">Triforce and Hookshot code mods use their Windows mod managers. Emulator builds were load-tested on Lichii build 150 and Fritchii v5.8.4. Switch 2 hardware packages are unverified on console. <a class="text-link" href="#install">See setup requirements</a></p>
+      <p class="catalog-note">Triforce and Hookshot code mods use their Windows mod managers. Each download lists its tested emulator build. Switch 2 hardware packages are unverified on console. <a class="text-link" href="#install">See setup requirements</a></p>
       <div class="cards">
+        <article class="mod-card" id="lens-and-mask">
+          <div class="card-media">
+            <div class="card-visual">
+              <img src="assets/lens-and-mask.webp" width="960" height="540" alt="Link wears Bunny Hood and the Lenses of Truth inside the purple Lens effect">
+            </div>
+          </div>
+          <div class="card-body">
+            <p class="card-meta"><span>Equipment</span><span class="version">v1.0.0</span></p>
+            <h3>Lens and Mask</h3>
+            <p>Wear the Lenses of Truth with any owned mask. Press A on Lenses of Truth in Equipment to switch them on or off. D-pad Up toggles your mask while the Lens stays active.</p>
+            <div class="card-actions">
+              <div class="platform-downloads" role="group" aria-label="Lens and Mask downloads">
+                <a class="button button-download" aria-label="Lichii build 316 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.0/OoT-Remake-Lens-and-Mask-v1.0.0-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 316</a>
+                <a class="button button-download" aria-label="Fritchii v5.8.4 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.0/OoT-Remake-Lens-and-Mask-v1.0.0-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v5.8.4</a>
+                <a class="button button-download" aria-label="Triforce v0.4.0 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.0/OoT-Remake-Lens-and-Mask-v1.0.0-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce v0.4.0</a>
+              </div>
+              <a class="text-link" aria-label="Release notes for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/lens-and-mask-v1.0.0">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
+            </div>
+          </div>
+        </article>
         <article class="mod-card" id="songbook-autoplay">
           <figure class="card-media">
             <a class="card-visual" aria-label="Watch video for Songbook Autoplay on YouTube" href="https://www.youtube.com/watch?v=ewrqd60lBVk">
@@ -248,7 +268,7 @@
         </ol>
       </div>
       <h3 class="guide-heading" id="install-lichii">Lichii and Fritchii</h3>
-      <p class="install-requirements">Tested on Lichii build 150 and <a class="text-link" href="https://github.com/Frizti/Fritchii/releases/tag/fritchii-v5.8.4">Fritchii v5.8.4</a>.</p>
+      <p class="install-requirements">See the mod's download for its tested Lichii build. Fritchii packages were tested on <a class="text-link" href="https://github.com/Frizti/Fritchii/releases/tag/fritchii-v5.8.4">Fritchii v5.8.4</a>.</p>
       <ol class="steps">
         <li>
           <h3>Open the mod folder</h3>
@@ -256,7 +276,7 @@
         </li>
         <li>
           <h3>Extract the ZIP</h3>
-          <p>Copy the named mod folder into that location. For Mask Menu Unlock, take it from inside <code>0400486024DEC000</code> and keep both <code>exefs</code> and <code>romfs</code>.</p>
+          <p>Copy the named mod folder into that location. For Lens and Mask and Mask Menu Unlock, find it inside <code>0400486024DEC000</code>. Keep all folders packaged inside the mod.</p>
         </li>
         <li>
           <h3>Enable and launch</h3>
@@ -265,7 +285,7 @@
       </ol>
       <div class="install-detail">
         <p><strong>Folder layout</strong> <code>Mod Data Location / Mod Name / exefs / &lt;build-id&gt;.ips</code></p>
-        <p>Replace the existing copy when updating. Use separate mod folders for Lichii and Fritchii if you install Mask Menu Unlock in both.</p>
+        <p>Replace the existing copy when updating. Keep separate mod folders for Lichii and Fritchii when using platform-specific ZIPs.</p>
         <p>To uninstall, close the game and remove the named mod folder.</p>
       </div>
       <h3 class="guide-heading" id="install-hookshot">Hookshot on Windows</h3>
