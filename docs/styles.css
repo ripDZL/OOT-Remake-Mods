@@ -20,7 +20,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; }
 p, h1, h2, h3, figure { margin: 0; }
 strong { color: var(--ink); }
-a:focus-visible, button:focus-visible {
+a:focus-visible, button:focus-visible, select:focus-visible {
   outline: 2px solid #ffe0a1;
   outline-offset: 5px;
 }
@@ -190,6 +190,31 @@ h1 em { display: block; color: var(--gold); }
 .releases-link { color: var(--gold); white-space: nowrap; }
 .catalog-note { margin-bottom: 18px; color: var(--muted); font-size: .9rem; }
 .catalog-note .text-link { display: inline; }
+.catalog-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-bottom: 18px;
+  color: var(--muted);
+  font-size: .85rem;
+}
+.catalog-sort:not([hidden]) {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 650;
+}
+.catalog-sort select {
+  min-height: 40px;
+  padding: 0 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+}
 .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .mod-card {
   display: flex;
@@ -274,7 +299,7 @@ h1 em { display: block; color: var(--gold); }
 .card-body { display: flex; flex-direction: column; flex: 1; padding: 20px; }
 .card-meta {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   gap: 6px;
   margin-bottom: 10px;
@@ -283,6 +308,13 @@ h1 em { display: block; color: var(--gold); }
   font-weight: 750;
   letter-spacing: .09em;
   text-transform: uppercase;
+}
+.card-downloads {
+  margin-inline-start: auto;
+  color: var(--muted);
+  font-size: .75rem;
+  letter-spacing: normal;
+  text-transform: none;
 }
 .version {
   padding: 2px 7px;

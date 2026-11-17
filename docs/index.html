@@ -64,7 +64,7 @@
           <a class="button button-primary" href="#mods">Browse mods <svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
           <a class="text-link" href="#install">How to install</a>
         </div>
-        <p class="compatibility"><span class="status-dot"></span> Requires game v1.1.1 <span aria-hidden="true">·</span> <span><strong id="mod-download-count">61</strong> total mod downloads on GitHub</span></p>
+        <p class="compatibility"><span class="status-dot"></span> Requires game v1.1.1 <span aria-hidden="true">·</span> <span><strong id="mod-download-count">140</strong> total mod downloads on GitHub</span></p>
       </div>
     </section>
 
@@ -77,6 +77,17 @@
         <a class="text-link releases-link" href="https://github.com/ripDZL/OOT-Remake-Mods/releases">All releases <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
       </div>
       <p class="catalog-note">Triforce and Hookshot code mods use their Windows mod managers. Each download lists its tested emulator build. Switch 2 hardware packages are unverified on console. <a class="text-link" href="#install">See setup requirements</a></p>
+      <div class="catalog-toolbar">
+        <p>Download counts include every GitHub release and platform for each mod. <span id="download-count-status" role="status" hidden>Showing the last verified counts.</span></p>
+        <label class="catalog-sort" hidden>Sort by
+          <select id="mod-sort">
+            <option value="newest">Newest first</option>
+            <option value="oldest">Oldest first</option>
+            <option value="downloads">Most downloaded</option>
+            <option value="name">Name A–Z</option>
+          </select>
+        </label>
+      </div>
       <div class="cards">
         <article class="mod-card" id="lens-and-mask">
           <figure class="card-media">
@@ -86,7 +97,7 @@
             <figcaption class="created-date">Created <time datetime="2026-11-16">Nov 16, 2026</time></figcaption>
           </figure>
           <div class="card-body">
-            <p class="card-meta"><span>Equipment</span><span class="version">v1.0.0</span></p>
+            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="3">3 downloads</data><span class="version">v1.0.0</span></p>
             <h3>Lens and Mask</h3>
             <p>Wear the Lenses of Truth with any owned mask. Press A on Lenses of Truth in Equipment to switch them on or off. D-pad Up toggles your mask while the Lens stays active.</p>
             <div class="card-actions">
@@ -99,27 +110,25 @@
             </div>
           </div>
         </article>
-        <article class="mod-card" id="songbook-autoplay">
+        <article class="mod-card" id="mask-menu-unlock">
           <figure class="card-media">
-            <a class="card-visual" aria-label="Watch video for Songbook Autoplay on YouTube" href="https://www.youtube.com/watch?v=ewrqd60lBVk">
-              <img src="assets/songbook.webp" width="960" height="540" alt="Zelda’s Lullaby highlighted in the Ocarina songbook">
+            <a class="card-visual" aria-label="Watch video for Mask Menu Unlock on YouTube" href="https://www.youtube.com/watch?v=Q62oFT4Nmd0">
+              <img src="assets/mask-menu.webp" width="960" height="540" alt="Adult Link wears the Skull Mask in the Equipment menu">
               <span class="watch-badge"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch video</span>
             </a>
-            <figcaption class="created-date">Created <time datetime="2026-11-07">Nov 7, 2026</time></figcaption>
+            <figcaption class="created-date">Created <time datetime="2026-11-10">Nov 10, 2026</time></figcaption>
           </figure>
           <div class="card-body">
-            <p class="card-meta"><span>Ocarina</span><span class="version">v1.0.2</span></p>
-            <h3>Songbook Autoplay</h3>
-            <p>Play a learned song right from the songbook. Draw the Ocarina, hold ZL, select a song with A, then release ZL.</p>
+            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="26">26 downloads</data><span class="version">v1.0.0</span></p>
+            <h3>Mask Menu Unlock</h3>
+            <p>Cycle the eight regular masks from the Equipment menu after completing the Mask of Truth trading quest. Missing masks are added to your inventory.</p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="Songbook Autoplay downloads">
-                <a class="button button-download" aria-label="Lichii build 150 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 150</a>
-                <a class="button button-download" aria-label="Fritchii v5.8.4 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v5.8.4</a>
-                <a class="button button-download" aria-label="Triforce download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce</a>
-                <a class="button button-download" aria-label="Hookshot download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot</a>
-                <a class="button button-download button-test" aria-label="Switch 2 hardware test download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
+              <div class="platform-downloads" role="group" aria-label="Mask Menu Unlock downloads">
+                <a class="button button-download" aria-label="Lichii build 150 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.0/OoT-Remake-Mask-Menu-Unlock-v1.0.0-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 150</a>
+                <a class="button button-download" aria-label="Fritchii v5.8.4 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.0/OoT-Remake-Mask-Menu-Unlock-v1.0.0-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v5.8.4</a>
+                <a class="button button-download" aria-label="Triforce v1.0.2 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.2/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce v1.0.2</a>
               </div>
-              <a class="text-link" aria-label="Release notes for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/songbook-autoplay-v1.0.2">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
+              <a class="text-link" aria-label="Release notes for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/mask-menu-unlock-v1.0.0">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
         </article>
@@ -132,7 +141,7 @@
             <figcaption class="created-date">Created <time datetime="2026-11-09">Nov 9, 2026</time></figcaption>
           </figure>
           <div class="card-body">
-            <p class="card-meta"><span>Movement</span><span class="version">v1.1.0 test</span></p>
+            <p class="card-meta"><span>Movement</span><data class="card-downloads" value="34">34 downloads</data><span class="version">v1.1.0 test</span></p>
             <h3>Classic Ledge Jump</h3>
             <p>Run off a ledge for an automatic jump and a light rumble. Ease the stick to step off normally. Manual jumps get no added rumble.</p>
             <div class="card-actions">
@@ -161,7 +170,7 @@
             <figcaption class="created-date">Created <time datetime="2026-11-07">Nov 7, 2026</time></figcaption>
           </figure>
           <div class="card-body">
-            <p class="card-meta"><span>Equipment</span><span class="version">Revision 2</span></p>
+            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="40">40 downloads</data><span class="version">Revision 2</span></p>
             <h3>Bunny Hood Speed Boost</h3>
             <p>Get a 50% boost to normal ground movement while wearing the Bunny Hood, within the game’s speed limits.</p>
             <div class="card-actions">
@@ -176,25 +185,27 @@
             </div>
           </div>
         </article>
-        <article class="mod-card" id="mask-menu-unlock">
+        <article class="mod-card" id="songbook-autoplay">
           <figure class="card-media">
-            <a class="card-visual" aria-label="Watch video for Mask Menu Unlock on YouTube" href="https://www.youtube.com/watch?v=Q62oFT4Nmd0">
-              <img src="assets/mask-menu.webp" width="960" height="540" alt="Adult Link wears the Skull Mask in the Equipment menu">
+            <a class="card-visual" aria-label="Watch video for Songbook Autoplay on YouTube" href="https://www.youtube.com/watch?v=ewrqd60lBVk">
+              <img src="assets/songbook.webp" width="960" height="540" alt="Zelda’s Lullaby highlighted in the Ocarina songbook">
               <span class="watch-badge"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch video</span>
             </a>
-            <figcaption class="created-date">Created <time datetime="2026-11-10">Nov 10, 2026</time></figcaption>
+            <figcaption class="created-date">Created <time datetime="2026-11-07">Nov 7, 2026</time></figcaption>
           </figure>
           <div class="card-body">
-            <p class="card-meta"><span>Equipment</span><span class="version">v1.0.0</span></p>
-            <h3>Mask Menu Unlock</h3>
-            <p>Cycle the eight regular masks from the Equipment menu after completing the Mask of Truth trading quest. Missing masks are added to your inventory.</p>
+            <p class="card-meta"><span>Ocarina</span><data class="card-downloads" value="37">37 downloads</data><span class="version">v1.0.2</span></p>
+            <h3>Songbook Autoplay</h3>
+            <p>Play a learned song right from the songbook. Draw the Ocarina, hold ZL, select a song with A, then release ZL.</p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="Mask Menu Unlock downloads">
-                <a class="button button-download" aria-label="Lichii build 150 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.0/OoT-Remake-Mask-Menu-Unlock-v1.0.0-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 150</a>
-                <a class="button button-download" aria-label="Fritchii v5.8.4 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.0/OoT-Remake-Mask-Menu-Unlock-v1.0.0-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v5.8.4</a>
-                <a class="button button-download" aria-label="Triforce v1.0.2 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.2/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce v1.0.2</a>
+              <div class="platform-downloads" role="group" aria-label="Songbook Autoplay downloads">
+                <a class="button button-download" aria-label="Lichii build 150 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 150</a>
+                <a class="button button-download" aria-label="Fritchii v5.8.4 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v5.8.4</a>
+                <a class="button button-download" aria-label="Triforce download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce</a>
+                <a class="button button-download" aria-label="Hookshot download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot</a>
+                <a class="button button-download button-test" aria-label="Switch 2 hardware test download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
               </div>
-              <a class="text-link" aria-label="Release notes for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/mask-menu-unlock-v1.0.0">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
+              <a class="text-link" aria-label="Release notes for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/songbook-autoplay-v1.0.2">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
         </article>
