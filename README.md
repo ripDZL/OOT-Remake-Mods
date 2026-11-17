@@ -1,14 +1,17 @@
 <h1 align="center">Ocarina of Time Remake Mods</h1>
 
 <p align="center">
-  Equipment, movement, and ocarina mods for the Nintendo Switch 2 remake.<br>
-  <strong>Requires game version 1.1.1</strong>
+  Equipment, movement, and ocarina mods for the Nintendo Switch 2 remake.
+</p>
+
+<p align="center">
+  <a href="#compatibility"><img src="https://img.shields.io/badge/Game_version-1.1.1-3d6b54" alt="Requires game version 1.1.1"></a>
+  <a href="https://github.com/ripDZL/OOT-Remake-Mods/releases"><img src="https://img.shields.io/github/downloads/ripDZL/OOT-Remake-Mods/total?label=Release%20downloads&amp;color=35658a" alt="Total GitHub release downloads, including mod managers"></a>
+  <a href="#installation"><img src="https://img.shields.io/badge/Install-Platform_guides-806127" alt="Installation guides by platform"></a>
 </p>
 
 <p align="center">
   <strong><a href="https://ripdzl.github.io/OOT-Remake-Mods/#mods">Browse &amp; download mods</a></strong>
-  · <a href="#installation">Installation</a>
-  · <a href="https://github.com/ripDZL/OOT-Remake-Mods/releases">Release archive</a>
 </p>
 
 <p align="center">
@@ -28,7 +31,7 @@
 
 ## Installation
 
-Choose the ZIP for your platform from the [mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods).
+Use **game version 1.1.1** and choose the ZIP for your platform from the [mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods).
 
 - **Triforce and Hookshot on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.1) · [Hookshot Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
 - **Lichii and Fritchii.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
