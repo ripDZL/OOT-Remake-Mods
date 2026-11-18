@@ -23,17 +23,20 @@
 
 | Mod | What it changes | Release notes |
 | :-- | :-- | :-- |
+| [TOTK-style Arrow Recovery](https://ripdzl.github.io/OOT-Remake-Mods/#totk-style-arrow-recovery) | Recover missed normal arrows with an embedded-arrow effect and white pickup sparkle. | [v0.0.7](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/totk-style-arrow-recovery-v0.0.7) |
 | [Lens and Mask](https://ripdzl.github.io/OOT-Remake-Mods/#lens-and-mask) | Toggle your mask while the Lenses of Truth stay active. | [v1.0.1](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/lens-and-mask-v1.0.1) |
 | [Mask Menu Unlock](https://ripdzl.github.io/OOT-Remake-Mods/#mask-menu-unlock) | Cycle through eight masks from Equipment after completing the Mask of Truth trading quest. | [v1.0.2](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/mask-menu-unlock-v1.0.2) |
 | [Classic Ledge Jump](https://ripdzl.github.io/OOT-Remake-Mods/#classic-ledge-jump) | Restore the automatic jump when running off a ledge. | [v1.1.0 test](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/classic-ledge-jump-v1.1.0) |
 | [Bunny Hood Speed Boost](https://ripdzl.github.io/OOT-Remake-Mods/#bunny-hood-speed-boost) | Run faster while wearing the Bunny Hood. | [Revision 2](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/bunny-hood-speed-boost-r2) |
 | [Songbook Autoplay](https://ripdzl.github.io/OOT-Remake-Mods/#songbook-autoplay) | Play learned ocarina songs directly from the songbook. | [v1.0.2](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/songbook-autoplay-v1.0.2) |
 
+[Current platform downloads and collection test results](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/mod-collection-2026-11-18)
+
 ## Installation
 
 Use **game version 1.1.1** and choose the ZIP for your platform from the [mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods).
 
-- **Triforce and Hookshot on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.1) · [Hookshot Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
+- **Triforce and Hookshot on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.3) · [Hookshot Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
 - **Lichii and Fritchii.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
 - **Switch 2 hardware tests.** Select releases have dedicated test ZIPs. Physical console compatibility is unverified. [Hardware test guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-switch-2)
 
@@ -41,15 +44,18 @@ Use **game version 1.1.1** and choose the ZIP for your platform from the [mod ca
 
 | Mod | Triforce | Hookshot | Lichii | Fritchii | Switch 2 |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| Lens and Mask v1.0.1 | Gameplay · 0.4.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
-| Mask Menu Unlock v1.0.2 | Gameplay · 0.4.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
-| Classic Ledge Jump v1.1.0 test | Launch · 0.4.0 | Gameplay · 2.0.11 | Gameplay · 125, load · 150 | Load · 5.8.4 | Hardware test |
-| Bunny Hood Speed Boost r2 | Launch · 0.4.0 | Gameplay · 2.0.11 | Gameplay · 95, load · 150 | Load · 5.8.4 | Hardware test |
-| Songbook Autoplay v1.0.2 | Launch · 0.4.0 | Gameplay · 2.0.11 | Gameplay · 117/125, load · 150 | Load · 5.8.4 | Hardware test |
+| TOTK-style Arrow Recovery v0.0.7 | Gameplay · 0.5.0 | — | Gameplay · 316 | Gameplay · 5.8.4 | — |
+| Lens and Mask v1.0.1 | Gameplay · 0.5.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
+| Mask Menu Unlock v1.0.2 | Gameplay · 0.5.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
+| Classic Ledge Jump v1.1.0 test | Launch · 0.5.0 | Gameplay · 2.0.11 | Gameplay · 125, load · 150/316 | Load · 5.8.4 | Hardware test |
+| Bunny Hood Speed Boost r2 | Launch · 0.5.0 | Gameplay · 2.0.11 | Gameplay · 95, load · 150/316 | Load · 5.8.4 | Hardware test |
+| Songbook Autoplay v1.0.2 | Launch · 0.5.0 | Gameplay · 2.0.11 | Gameplay · 117/125, load · 150/316 | Load · 5.8.4 | Hardware test |
 
-**Gameplay** means the mod's feature was exercised. **Launch** or **load** means the game ran with the patch enabled. **Hardware test** means a test ZIP is available and physical console compatibility is unverified. **—** means there is no hardware test ZIP.
+**Gameplay** means the mod's feature was exercised. **Launch** or **load** means the game ran with the patch enabled. **Hardware test** means a test ZIP is available and physical console compatibility is unverified. **—** means no download is offered for that platform.
 
-Lens and Mask v1.0.1 and Mask Menu Unlock v1.0.2 were tested together with Classic Ledge Jump enabled. The release notes describe the scope of each test.
+The six published gameplay mods were loaded together on Lichii build 316 and Fritchii 5.8.4 with High Refresh Rate enabled. Arrow Recovery and Lens/mask controls were exercised with the full collection. The other features retain their earlier gameplay checks; the release notes describe their scope.
+
+Use the ZIP for your platform. **Enable only one Arrow Recovery edition/version**, disable the old generic entry, and retain the packaged folder name. Simple Arrow Recovery v1.0 and the cel-shading preview remain local tests. The TOTK-style release excludes elemental arrows; trees, water, full quivers, minigames and long-session cleanup still need broader testing.
 
 ## Report an issue
 
