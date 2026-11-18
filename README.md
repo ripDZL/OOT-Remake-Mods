@@ -36,7 +36,7 @@
 
 Use **game version 1.1.1** and choose the ZIP for your platform from the [mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods).
 
-- **Triforce and Hookshot on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.3) · [Hookshot Mod Manager](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
+- **Triforce and Hookshot on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.3) · [Hookshot Mod Manager v0.1.1 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
 - **Lichii and Fritchii.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
 - **Switch 2 hardware tests.** Select releases have dedicated test ZIPs. Physical console compatibility is unverified. [Hardware test guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-switch-2)
 
@@ -46,7 +46,7 @@ Use **game version 1.1.1** and choose the ZIP for your platform from the [mod ca
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | TOTK-style Arrow Recovery v0.0.7 | Gameplay · 0.5.0 | — | Gameplay · 316 | Gameplay · 5.8.4 | — |
 | Lens and Mask v1.0.1 | Gameplay · 0.5.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
-| Mask Menu Unlock v1.0.2 | Gameplay · 0.5.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
+| Mask Menu Unlock v1.0.2 | Gameplay · 0.4.0; load · 0.5.0 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
 | Classic Ledge Jump v1.1.0 test | Launch · 0.5.0 | Gameplay · 2.0.11 | Gameplay · 125, load · 150/316 | Load · 5.8.4 | Hardware test |
 | Bunny Hood Speed Boost r2 | Launch · 0.5.0 | Gameplay · 2.0.11 | Gameplay · 95, load · 150/316 | Load · 5.8.4 | Hardware test |
 | Songbook Autoplay v1.0.2 | Launch · 0.5.0 | Gameplay · 2.0.11 | Gameplay · 117/125, load · 150/316 | Load · 5.8.4 | Hardware test |

@@ -44,6 +44,7 @@ async function updateDownloadCounts() {
     downloads.value = count;
     downloads.textContent = `${countFormat.format(count)} ${count === 1 ? "download" : "downloads"}`;
   }
+  document.getElementById("download-count-status").hidden = true;
   if (sort.value === "downloads") sortCards();
 }
 
