@@ -36,26 +36,26 @@
 
 Use **game version 1.1.1** and choose the ZIP for your platform from the [mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods).
 
-- **Triforce and Hookshot on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.3) · [Hookshot Mod Manager v0.1.1 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
-- **Lichii and Fritchii.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
+- **Triforce v0.5.2 and Hookshot on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.3) · [Hookshot Mod Manager v0.1.1 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.1)
+- **Lichii build 341 and Fritchii v5.8.4.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
 - **Switch 2 hardware tests.** Select releases have dedicated test ZIPs. Physical console compatibility is unverified. [Hardware test guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-switch-2)
 
 ## Compatibility
 
 | Mod | Triforce | Hookshot | Lichii | Fritchii | Switch 2 |
 | :-- | :-- | :-- | :-- | :-- | :-- |
-| TOTK-style Arrow Recovery v0.0.7 | Gameplay · 0.5.1, load · 0.5.2 | — | Gameplay · 316 | Gameplay · 5.8.4 | — |
-| Lens and Mask v1.0.1 | Gameplay · 0.5.2 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
-| Mask Menu Unlock v1.0.2 | Gameplay · 0.5.2 | Gameplay · 2.3.2 | Gameplay · 316 | Gameplay · 5.8.4 | — |
-| Classic Ledge Jump v1.1.0 test | Gameplay · 0.5.1, load · 0.5.2 | Gameplay · 2.0.11 | Gameplay · 125, load · 150/316 | Load · 5.8.4 | Hardware test |
-| Bunny Hood Speed Boost r2 | Gameplay · 0.5.1, load · 0.5.2 | Gameplay · 2.0.11 | Confirmed · 341 | Load · 5.8.4 | Hardware test |
-| Songbook Autoplay v1.0.2 | Gameplay · 0.5.1, load · 0.5.2 | Gameplay · 2.0.11 | Gameplay · 117/125, load · 150/316 | Load · 5.8.4 | Hardware test |
+| TOTK-style Arrow Recovery v0.0.7 | Gameplay · 0.5.1, load · 0.5.2 | — | Gameplay · 316, load · 341 | Gameplay · 5.8.4 | — |
+| Lens and Mask v1.0.1 | Gameplay · 0.5.2 | Gameplay · 2.3.2 | Gameplay · 341 | Gameplay · 5.8.4 | — |
+| Mask Menu Unlock v1.0.2 | Gameplay · 0.5.2 | Gameplay · 2.3.2 | Mask switching · 341, eight-mask cycle · 316 | Gameplay · 5.8.4 | — |
+| Classic Ledge Jump v1.1.0 test | Gameplay · 0.5.1, load · 0.5.2 | Gameplay · 2.0.11 | Gameplay · 125, load · 150/316/341 | Load · 5.8.4 | Hardware test |
+| Bunny Hood Speed Boost r2 | Gameplay · 0.5.1, load · 0.5.2 | Gameplay · 2.0.11 | Gameplay · 95, load · 341 | Load · 5.8.4 | Hardware test |
+| Songbook Autoplay v1.0.2 | Gameplay · 0.5.1, load · 0.5.2 | Gameplay · 2.0.11 | Gameplay · 117/125, load · 150/316/341 | Load · 5.8.4 | Hardware test |
 
-**Gameplay** means the mod's feature was exercised. **Load** means the game reached gameplay with the patch enabled. **Confirmed** reflects a player report. **Hardware test** means a test ZIP is available and physical console compatibility is unverified. **—** means no download is offered for that platform.
+**Gameplay** means the mod's feature was exercised. **Load** means the game reached gameplay with the patch enabled. **Hardware test** means a test ZIP is available and physical console compatibility is unverified. **—** means no download is offered for that platform.
 
 Triforce v0.5.2 was checked with Mod Manager v0.1.3. All six public mods loaded together into Hyrule Field. Lens controls and the full eight-mask cycle passed in gameplay. After updating Triforce, use **Play Triforce** to rebuild the selected code mods. Audio, HDR and physical rumble were outside this check.
 
-The six public mods also loaded together on Lichii build 316 and Fritchii 5.8.4 with High Refresh Rate enabled. Arrow Recovery and Lens/mask controls passed in gameplay with the full collection. Bunny Hood Speed Boost was gameplay tested on Lichii build 95 and later confirmed working on build 341.
+All six public mods reached Hyrule Field on [Lichii build 341](https://github.com/zortos293/Lichii/releases/tag/build-341). Lens on/off, hiding and restoring the Bunny Hood, and switching to the Spooky Mask passed. A player also confirmed Bunny Hood Speed Boost on build 341. Earlier checks covered Arrow Recovery and Lens/mask gameplay on build 316 and Fritchii v5.8.4 with High Refresh Rate enabled.
 
 Use the ZIP for your platform. **Enable only one Arrow Recovery edition/version**, disable the old generic entry, and retain the packaged folder name. Simple Arrow Recovery v1.0 and the cel-shading preview remain local tests. The TOTK-style release excludes elemental arrows; trees, water, full quivers, minigames and long-session cleanup still need broader testing.
 
