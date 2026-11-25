@@ -34,15 +34,16 @@
 
 Use **game version 1.1.1** and choose the ZIP for your platform from the [mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods).
 
-- **Triforce v0.6.0 and Hookshot v3.0.2 on Windows.** Build the base game first. Drop the ZIP into the matching manager, enable the mod, and click **Play**. The first launch with a new code mod selection can take several minutes. [Triforce Mod Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.3) · [Hookshot Mod Manager v0.1.2 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.2)
+- **Triforce v0.8.0 and Longshot v3.2.0 on Windows.** Build the base game first. Drop the shared Triforce / Longshot ZIPs into your manager, enable the mods, and click **Play**. Both managers show build progress in a live terminal and let you cancel a running build. [Triforce Manager v0.1.6 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.6) · [Longshot Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/longshot-mod-manager-v0.1.3)
+- **Legacy Hookshot v3.0.2 on Windows.** Use the Hookshot ZIPs with [Hookshot Mod Manager v0.1.2 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.2).
 - **Lichii build 366 and Fritchii v6.2.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
 - **Switch 2 hardware tests.** Select releases have dedicated test ZIPs. Physical console compatibility is unverified. [Hardware test guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-switch-2)
 
 ## Compatibility
 
-All six gameplay mods were tested together on the Windows builds below, including arrow pickup, all eight masks, Lens controls, Bunny Hood movement, automatic ledge jumps, and Songbook Autoplay.
+The shared Windows ZIPs loaded together on Triforce v0.8.0 and Longshot v3.2.0. Live tests verified the code patches, arrow recovery and Bunny Hood toggles on both. Earlier Hookshot and emulator tests also exercised mask and Lens controls, ledge jumps and Songbook Autoplay.
 
-| Mod | Triforce v0.6.0 | Hookshot v3.0.2 | Lichii 366 | Fritchii v6.2 | Switch 2 |
+| Mod | Triforce v0.8.0 / Longshot v3.2.0 | Hookshot v3.0.2 (legacy) | Lichii 366 | Fritchii v6.2 | Switch 2 |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | TOTK-style Arrow Recovery | v0.0.7 | v0.0.7 | v0.0.8 | v0.0.7 | — |
 | Lens and Mask | v1.0.1 | v1.0.1 | v1.0.2 | v1.0.2 | — |
