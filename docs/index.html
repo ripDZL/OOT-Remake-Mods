@@ -3,19 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111612">
+  <meta name="theme-color" content="#142c23">
   <meta name="description" content="Download OoT Remake 1.1.1 gameplay mods for Triforce, Longshot, Lichii, Fritchii, legacy Hookshot, and Switch 2 hardware testing.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ocarina of Time Remake Mods">
   <meta property="og:description" content="Gameplay mods for the Switch 2 remake, with direct downloads and a quick install guide.">
   <meta property="og:image" content="https://ripdzl.github.io/OOT-Remake-Mods/assets/kakariko.webp">
+  <link rel="canonical" href="https://ripdzl.github.io/OOT-Remake-Mods/">
   <link rel="icon" href="assets/waypoint.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
   <script src="support.js" defer></script>
   <script src="downloads.js?v=3" defer></script>
-  <title>Ocarina of Time Remake Mods</title>
+  <script src="catalog-controls.js" defer></script>
+  <title>Forest Journal · Ocarina of Time Remake Mods</title>
+  <script src="captures.js?v=2" defer></script>
 </head>
-<body>
+<body data-theme="verdant">
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
     <symbol id="download" viewBox="0 0 24 24">
       <path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/>
@@ -39,7 +42,7 @@
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="./">
-        <img src="assets/waypoint.svg" width="32" height="32" alt="">
+        <span class="brand-mark" aria-hidden="true"></span>
         <span>OoT Remake Mods</span>
       </a>
       <nav aria-label="Main navigation">
@@ -52,34 +55,39 @@
 
   <main id="main" class="shell" tabindex="-1">
     <section class="hero" aria-labelledby="page-title">
-      <figure class="hero-image">
-        <img src="assets/kakariko.webp" width="853" height="480" alt="Link jumps from a stone terrace in Kakariko Village" fetchpriority="high">
-        <figcaption>Kakariko Village <span>·</span> In-game capture</figcaption>
-      </figure>
+      <figure class="hero-capture"><img src="assets/kakariko.webp" width="853" height="480" alt="Link jumps from a stone terrace in Kakariko Village" fetchpriority="high" decoding="async"></figure>
       <div class="hero-copy">
         <p class="eyebrow"><span class="diamond"></span> Unofficial gameplay mods</p>
         <h1 id="page-title">Ocarina of Time <em>Remake Mods</em></h1>
-        <p class="hero-description">Download gameplay mods for Triforce, Longshot, Lichii, Fritchii, legacy Hookshot, or Switch 2 hardware testing.</p>
+        <p class="hero-description">Recover arrows, change equipment, and bring back classic movement with six gameplay mods for the remake.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#mods">Browse mods <svg class="icon" aria-hidden="true"><use href="#arrow-down"/></svg></a>
           <a class="text-link" href="#install">How to install</a>
         </div>
-        <p class="compatibility"><span class="status-dot"></span> Requires game v1.1.1 <span aria-hidden="true">·</span> <span><strong id="mod-download-count">317</strong> total mod downloads on GitHub</span></p>
+        <p class="compatibility"><span class="status-dot"></span> Requires game v1.1.1 <span aria-hidden="true">·</span> <span><strong id="mod-download-count">461</strong> total mod downloads on GitHub</span></p>
       </div>
+      <aside class="hero-index" aria-label="From the collection">
+        <h2>From the collection</h2>
+        <a class="hero-link" href="#totk-style-arrow-recovery"><span><strong>Recover missed arrows</strong><small>TOTK-style Arrow Recovery</small></span><span aria-hidden="true">↗</span></a>
+<a class="hero-link" href="#bunny-hood-speed-boost"><span><strong>Travel faster</strong><small>Bunny Hood Speed Boost</small></span><span aria-hidden="true">↗</span></a>
+<a class="hero-link" href="#songbook-autoplay"><span><strong>Play a learned song</strong><small>Songbook Autoplay</small></span><span aria-hidden="true">↗</span></a>
+      </aside>
     </section>
 
     <section class="catalog" id="mods" aria-labelledby="mods-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow"><span class="diamond"></span> Gameplay patches</p>
+
           <h2 id="mods-title">Download mods</h2>
         </div>
         <a class="text-link releases-link" href="https://github.com/ripDZL/OOT-Remake-Mods/releases">All releases <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
       </div>
-      <p class="catalog-note">The six gameplay mods share Windows downloads for Triforce v0.8.0 and Longshot v3.2.0. Use the matching manager for code mods. Emulator, legacy Hookshot, and Switch 2 test downloads are also available. Console compatibility is unverified. <a class="text-link" href="https://github.com/ripDZL/OOT-Remake-Mods#compatibility">Compatibility and test coverage</a> · <a class="text-link" href="#install">Setup requirements</a></p>
+      <details class="catalog-note catalog-coverage"><summary>Tested builds and compatibility</summary><p>The six gameplay mods share Windows downloads for Triforce v0.8.0 and Longshot v3.2.0. Use the matching manager for code mods. The emulator ZIPs were retested on Lichii build 410 and Fritchii v6.5. Legacy Hookshot and Switch 2 test downloads are also available. Console compatibility is unverified. <a class="text-link" href="https://github.com/ripDZL/OOT-Remake-Mods#compatibility">Compatibility and test coverage</a> · <a class="text-link" href="#install">Setup requirements</a></p></details>
       <div class="catalog-toolbar">
-        <p>Download counts include every GitHub release and platform for each mod. <span id="download-count-status" role="status">Showing verified counts from Nov 21, 2026.</span></p>
-        <label class="catalog-sort" hidden>Sort by
+        <div class="catalog-filters" id="catalog-filters" hidden>
+          <label class="search-field">Search mods<input id="mod-query" type="search" placeholder="Name or feature"></label>
+          <label>Platform<select id="mod-platform"><option value="all">All platforms</option><option value="windows">Triforce / Longshot</option><option value="lichii">Lichii</option><option value="fritchii">Fritchii</option><option value="hookshot">Hookshot (legacy)</option><option value="switch">Switch 2 hardware test</option></select></label>
+          <label class="catalog-sort" hidden>Sort by
           <select id="mod-sort">
             <option value="newest">Newest first</option>
             <option value="oldest">Oldest first</option>
@@ -87,151 +95,123 @@
             <option value="name">Name A–Z</option>
           </select>
         </label>
+        </div>
+        <div class="catalog-status">
+          <p id="result-count" role="status" hidden></p>
+          <details class="count-help"><summary>About download counts</summary><p>Download counts include every GitHub release and platform for each mod. <span id="download-count-status" role="status">Showing verified counts from Nov 25, 2026.</span></p></details>
+        </div>
       </div>
+      <div class="catalog-empty" id="catalog-empty" hidden><h3>No matching mods</h3><p>Try another search or platform.</p><button class="button" type="button" id="clear-catalog">Reset filters</button></div>
       <div class="cards">
         <article class="mod-card" id="totk-style-arrow-recovery">
-          <figure class="card-media">
-            <a class="card-visual" href="https://peertbdzl.duckdns.org/w/fJVjjtvEkaHCHmRN2x87Ed" aria-label="Watch video for TOTK-style Arrow Recovery on PeerTube">
-              <img src="assets/arrow-recovery-sparkles.png" width="883" height="996" alt="Three recoverable arrows embedded in stone, each with a white pickup sparkle on its feathers">
-              <span class="watch-badge"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch video</span>
-            </a>
-            <figcaption class="created-date">Created <time datetime="2026-11-18">Nov 18, 2026</time></figcaption>
-          </figure>
+          <figure class="card-image"><a class="capture-link watch-thumb" href="https://peertbdzl.duckdns.org/w/fJVjjtvEkaHCHmRN2x87Ed" aria-label="Watch preview for TOTK-style Arrow Recovery on PeerTube"><img loading="lazy" decoding="async" src="assets/arrow-recovery-sparkles.png" width="883" height="996" alt="Three recoverable arrows embedded in stone, each with a white pickup sparkle on its feathers"><span class="watch-cue"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch preview</span></a><a class="capture-zoom still-zoom" href="assets/arrow-recovery-sparkles.png" data-capture="TOTK-style Arrow Recovery" aria-label="Enlarge screenshot for TOTK-style Arrow Recovery">+</a></figure>
           <div class="card-body">
-            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="18">18 downloads</data><span class="version">v0.0.7–0.0.8</span></p>
+            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="53">53 downloads</data><span class="version">v0.0.7–0.0.8</span></p>
             <h3>TOTK-style Arrow Recovery</h3>
             <p>Missed normal arrows stay embedded where they land. A white sparkle marks their feathers. Walk close to recover one arrow automatically; the arrow and sparkle disappear after pickup. Elemental arrows are excluded; trees, water, full quivers and minigames still need testing.</p>
             <p>Use the ZIP for your platform and enable only one Arrow Recovery version.</p>
+            <p class="created-date">Added Created <time datetime="2026-11-18">Nov 18, 2026</time></p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="TOTK-style Arrow Recovery downloads">
-                <a class="button button-download" aria-label="Lichii build 366 download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.8/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.8-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 366</a>
-                <a class="button button-download" aria-label="Fritchii v6.2 download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.7/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.7-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.2</a>
-                <a class="button button-download" aria-label="Triforce and Longshot download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.7/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.7-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
-                <a class="button button-download" aria-label="Hookshot v3.0.2 download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.8/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.7-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
-              </div>
+              <div class="zip-control"><a class="button primary-zip" hidden><svg class="icon" aria-hidden="true"><use href="#download"/></svg><span></span></a><details class="zip-options" open><summary>All platform ZIPs</summary><div class="platform-downloads" role="group" aria-label="TOTK-style Arrow Recovery downloads">
+                <a data-platform="lichii" class="button button-download" aria-label="Lichii build 410 download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.8/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.8-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 410</a>
+                <a data-platform="fritchii" class="button button-download" aria-label="Fritchii v6.5 download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.7/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.7-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.5</a>
+                <a data-platform="windows" class="button button-download" aria-label="Triforce and Longshot download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.7/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.7-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
+                <a data-platform="hookshot" class="button button-download" aria-label="Hookshot v3.0.2 download for TOTK-style Arrow Recovery" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/totk-style-arrow-recovery-v0.0.8/OoT-Remake-TOTK-Style-Arrow-Recovery-v0.0.7-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
+              </div></details></div>
               <a class="text-link" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/totk-style-arrow-recovery-v0.0.8">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
         </article>
 
         <article class="mod-card" id="lens-and-mask">
-          <figure class="card-media">
-            <div class="card-visual">
-              <img src="assets/lens-and-mask.webp" width="960" height="540" alt="Link wears Bunny Hood and the Lenses of Truth inside the purple Lens effect">
-            </div>
-            <figcaption class="created-date">Created <time datetime="2026-11-16">Nov 16, 2026</time></figcaption>
-          </figure>
+          <figure class="card-image"><a class="capture-link" href="assets/lens-and-mask.webp" data-capture="Lens and Mask" aria-label="Enlarge screenshot for Lens and Mask"><img loading="lazy" decoding="async" src="assets/lens-and-mask.webp" width="960" height="540" alt="Link wears Bunny Hood and the Lenses of Truth inside the purple Lens effect"><span class="capture-zoom" aria-hidden="true">+</span></a></figure>
           <div class="card-body">
-            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="33">33 downloads</data><span class="version">v1.0.1–1.0.2</span></p>
+            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="59">59 downloads</data><span class="version">v1.0.1–1.0.2</span></p>
             <h3>Lens and Mask</h3>
             <p>Wear the Lenses of Truth with any owned mask. Press A on Lenses of Truth in Equipment to switch them on or off. D-pad Up toggles your mask while the Lens stays active.</p>
+            <p class="created-date">Added Created <time datetime="2026-11-16">Nov 16, 2026</time></p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="Lens and Mask downloads">
-                <a class="button button-download" aria-label="Lichii build 366 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.2/OoT-Remake-Lens-and-Mask-v1.0.2-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 366</a>
-                <a class="button button-download" aria-label="Fritchii v6.2 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.2/OoT-Remake-Lens-and-Mask-v1.0.2-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.2</a>
-                <a class="button button-download" aria-label="Triforce and Longshot download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Lens-and-Mask-v1.0.1-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
-                <a class="button button-download" aria-label="Hookshot v3.0.2 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.1/OoT-Remake-Lens-and-Mask-v1.0.1-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
-              </div>
+              <div class="zip-control"><a class="button primary-zip" hidden><svg class="icon" aria-hidden="true"><use href="#download"/></svg><span></span></a><details class="zip-options" open><summary>All platform ZIPs</summary><div class="platform-downloads" role="group" aria-label="Lens and Mask downloads">
+                <a data-platform="lichii" class="button button-download" aria-label="Lichii build 410 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.2/OoT-Remake-Lens-and-Mask-v1.0.2-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 410</a>
+                <a data-platform="fritchii" class="button button-download" aria-label="Fritchii v6.5 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.2/OoT-Remake-Lens-and-Mask-v1.0.2-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.5</a>
+                <a data-platform="windows" class="button button-download" aria-label="Triforce and Longshot download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Lens-and-Mask-v1.0.1-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
+                <a data-platform="hookshot" class="button button-download" aria-label="Hookshot v3.0.2 download for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/lens-and-mask-v1.0.1/OoT-Remake-Lens-and-Mask-v1.0.1-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
+              </div></details></div>
               <a class="text-link" aria-label="Release notes for Lens and Mask" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/lens-and-mask-v1.0.2">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
         </article>
         <article class="mod-card" id="mask-menu-unlock">
-          <figure class="card-media">
-            <a class="card-visual" aria-label="Watch video for Mask Menu Unlock on PeerTube" href="https://peertbdzl.duckdns.org/w/h2nHrhSCW8rs3b4LsPCPsk">
-              <img src="assets/mask-menu.webp" width="960" height="540" alt="Adult Link wears the Skull Mask in the Equipment menu">
-              <span class="watch-badge"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch video</span>
-            </a>
-            <figcaption class="created-date">Created <time datetime="2026-11-10">Nov 10, 2026</time></figcaption>
-          </figure>
+          <figure class="card-image"><a class="capture-link watch-thumb" href="https://peertbdzl.duckdns.org/w/h2nHrhSCW8rs3b4LsPCPsk" aria-label="Watch preview for Mask Menu Unlock on PeerTube"><img loading="lazy" decoding="async" src="assets/mask-menu.webp" width="960" height="540" alt="Adult Link wears the Skull Mask in the Equipment menu"><span class="watch-cue"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch preview</span></a><a class="capture-zoom still-zoom" href="assets/mask-menu.webp" data-capture="Mask Menu Unlock" aria-label="Enlarge screenshot for Mask Menu Unlock">+</a></figure>
           <div class="card-body">
-            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="66">66 downloads</data><span class="version">v1.0.2–1.0.3</span></p>
+            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="89">89 downloads</data><span class="version">v1.0.2–1.0.3</span></p>
             <h3>Mask Menu Unlock</h3>
             <p>Cycle the eight regular masks from the Equipment menu after completing the Mask of Truth trading quest. Missing masks are added to your inventory.</p>
+            <p class="created-date">Added Created <time datetime="2026-11-10">Nov 10, 2026</time></p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="Mask Menu Unlock downloads">
-                <a class="button button-download" aria-label="Lichii build 366 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 366</a>
-                <a class="button button-download" aria-label="Fritchii v6.2 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.3/OoT-Remake-Mask-Menu-Unlock-v1.0.3-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.2</a>
-                <a class="button button-download" aria-label="Triforce and Longshot download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
-                <a class="button button-download" aria-label="Hookshot v3.0.2 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.2/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
-              </div>
+              <div class="zip-control"><a class="button primary-zip" hidden><svg class="icon" aria-hidden="true"><use href="#download"/></svg><span></span></a><details class="zip-options" open><summary>All platform ZIPs</summary><div class="platform-downloads" role="group" aria-label="Mask Menu Unlock downloads">
+                <a data-platform="lichii" class="button button-download" aria-label="Lichii build 410 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 410</a>
+                <a data-platform="fritchii" class="button button-download" aria-label="Fritchii v6.5 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.3/OoT-Remake-Mask-Menu-Unlock-v1.0.3-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.5</a>
+                <a data-platform="windows" class="button button-download" aria-label="Triforce and Longshot download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
+                <a data-platform="hookshot" class="button button-download" aria-label="Hookshot v3.0.2 download for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mask-menu-unlock-v1.0.2/OoT-Remake-Mask-Menu-Unlock-v1.0.2-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
+              </div></details></div>
               <a class="text-link" aria-label="Release notes for Mask Menu Unlock" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/mask-menu-unlock-v1.0.3">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
         </article>
         <article class="mod-card" id="classic-ledge-jump">
-          <figure class="card-media">
-            <a class="card-visual" aria-label="Watch video for Classic Ledge Jump on PeerTube" href="https://peertbdzl.duckdns.org/w/h53LUz9Mfz12Yh9uGNXUr9">
-              <img src="assets/ledge-jump.webp" width="853" height="480" alt="Link airborne over the edge of a stone terrace">
-              <span class="watch-badge"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch video</span>
-            </a>
-            <figcaption class="created-date">Created <time datetime="2026-11-09">Nov 9, 2026</time></figcaption>
-          </figure>
+          <figure class="card-image"><a class="capture-link watch-thumb" href="https://peertbdzl.duckdns.org/w/h53LUz9Mfz12Yh9uGNXUr9" aria-label="Watch preview for Classic Ledge Jump on PeerTube"><img loading="lazy" decoding="async" src="assets/ledge-jump.webp" width="853" height="480" alt="Link airborne over the edge of a stone terrace"><span class="watch-cue"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch preview</span></a><a class="capture-zoom still-zoom" href="assets/ledge-jump.webp" data-capture="Classic Ledge Jump" aria-label="Enlarge screenshot for Classic Ledge Jump">+</a></figure>
           <div class="card-body">
-            <p class="card-meta"><span>Movement</span><data class="card-downloads" value="54">54 downloads</data><span class="version">v1.1.0 test</span></p>
+            <p class="card-meta"><span>Movement</span><data class="card-downloads" value="59">59 downloads</data><span class="version">v1.1.0 test</span></p>
             <h3>Classic Ledge Jump</h3>
             <p>Run off a ledge for an automatic jump and a light rumble. Ease the stick to step off normally. Manual jumps get no added rumble.</p>
+            <p class="created-date">Added Created <time datetime="2026-11-09">Nov 9, 2026</time></p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="Classic Ledge Jump downloads">
-                <a class="button button-download" aria-label="Lichii build 366 download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 366</a>
-                <a class="button button-download" aria-label="Fritchii v6.2 download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.2</a>
-                <a class="button button-download" aria-label="Triforce and Longshot download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
-                <a class="button button-download" aria-label="Hookshot v3.0.2 download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/classic-ledge-jump-v1.1.0/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
-                <a class="button button-download button-test" aria-label="Switch 2 hardware test download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/classic-ledge-jump-v1.1.0/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
-              </div>
+              <div class="zip-control"><a class="button primary-zip" hidden><svg class="icon" aria-hidden="true"><use href="#download"/></svg><span></span></a><details class="zip-options" open><summary>All platform ZIPs</summary><div class="platform-downloads" role="group" aria-label="Classic Ledge Jump downloads">
+                <a data-platform="lichii" class="button button-download" aria-label="Lichii build 410 download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 410</a>
+                <a data-platform="fritchii" class="button button-download" aria-label="Fritchii v6.5 download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.5</a>
+                <a data-platform="windows" class="button button-download" aria-label="Triforce and Longshot download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
+                <a data-platform="hookshot" class="button button-download" aria-label="Hookshot v3.0.2 download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/classic-ledge-jump-v1.1.0/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
+                <a data-platform="switch" class="button button-download button-test" aria-label="Switch 2 hardware test download for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/classic-ledge-jump-v1.1.0/OoT-Remake-Classic-Ledge-Jump-v1.1.0-test-Game1.1.1-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
+              </div></details></div>
               <a class="text-link" aria-label="Release notes for Classic Ledge Jump" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/classic-ledge-jump-v1.1.0">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
         </article>
         <article class="mod-card" id="bunny-hood-speed-boost">
-          <figure class="card-media">
-            <a class="card-visual speed-visual" aria-label="Watch video for Bunny Hood Speed Boost on PeerTube" href="https://peertbdzl.duckdns.org/w/qyc1JvSfBgzKfWYApx7VKf">
-              <div class="speed-copy" aria-hidden="true"><span>+50%</span><small>Ground speed</small></div>
-              <svg class="hood-art" viewBox="0 0 188 160" fill="none" aria-hidden="true">
-                <path class="hood-fill" d="M59 92C47 72 38 39 40 14c1-10 8-12 14-5 16 19 27 51 30 73a79 79 0 0 1 19 0c3-22 14-54 30-73 6-7 13-5 14 5 2 25-7 58-19 78 15 10 25 25 25 42v10c0 4-3 7-7 7H42c-4 0-7-3-7-7v-10c0-17 9-32 24-42Z"/>
-                <path class="hood-line" d="M64 79C55 58 51 40 51 28m72 51c9-21 13-39 13-51M59 140c0-20 14-35 35-35s35 15 35 35M11 103h27m-29 16h18m124-16h26m-16 16h18"/>
-                <path class="hood-star" d="m94 113 3 8 8 3-8 3-3 8-3-8-8-3 8-3Z"/>
-              </svg>
-              <span class="watch-badge"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch video</span>
-            </a>
-            <figcaption class="created-date">Created <time datetime="2026-11-07">Nov 7, 2026</time></figcaption>
-          </figure>
+          <figure class="card-image"><a class="capture-link watch-thumb" href="https://peertbdzl.duckdns.org/w/qyc1JvSfBgzKfWYApx7VKf" aria-label="Watch preview for Bunny Hood Speed Boost on PeerTube"><img src="assets/bunny-hood.png" width="1280" height="720" alt="Link wears the Bunny Hood beside a river" loading="lazy" decoding="async"><span class="watch-cue"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch preview</span></a><a class="capture-zoom still-zoom" href="assets/bunny-hood.png" data-capture="Bunny Hood Speed Boost" aria-label="Enlarge screenshot for Bunny Hood Speed Boost">+</a></figure>
           <div class="card-body">
-            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="76">76 downloads</data><span class="version">Revision 2</span></p>
+            <p class="card-meta"><span>Equipment</span><data class="card-downloads" value="98">98 downloads</data><span class="version">Revision 2</span></p>
             <h3>Bunny Hood Speed Boost</h3>
             <p>Get a 50% boost to normal ground movement while wearing the Bunny Hood, within the game’s speed limits.</p>
+            <p class="created-date">Added Created <time datetime="2026-11-07">Nov 7, 2026</time></p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="Bunny Hood Speed Boost downloads">
-                <a class="button button-download" aria-label="Lichii build 366 download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 366</a>
-                <a class="button button-download" aria-label="Fritchii v6.2 download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.2</a>
-                <a class="button button-download" aria-label="Triforce and Longshot download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
-                <a class="button button-download" aria-label="Hookshot v3.0.2 download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/bunny-hood-speed-boost-r2/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
-                <a class="button button-download button-test" aria-label="Switch 2 hardware test download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/bunny-hood-speed-boost-r2/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
-              </div>
+              <div class="zip-control"><a class="button primary-zip" hidden><svg class="icon" aria-hidden="true"><use href="#download"/></svg><span></span></a><details class="zip-options" open><summary>All platform ZIPs</summary><div class="platform-downloads" role="group" aria-label="Bunny Hood Speed Boost downloads">
+                <a data-platform="lichii" class="button button-download" aria-label="Lichii build 410 download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 410</a>
+                <a data-platform="fritchii" class="button button-download" aria-label="Fritchii v6.5 download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.5</a>
+                <a data-platform="windows" class="button button-download" aria-label="Triforce and Longshot download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
+                <a data-platform="hookshot" class="button button-download" aria-label="Hookshot v3.0.2 download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/bunny-hood-speed-boost-r2/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
+                <a data-platform="switch" class="button button-download button-test" aria-label="Switch 2 hardware test download for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/bunny-hood-speed-boost-r2/OoT-Remake-Bunny-Hood-Speed-Boost-v1.1.1-r2-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
+              </div></details></div>
               <a class="text-link" aria-label="Release notes for Bunny Hood Speed Boost" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/bunny-hood-speed-boost-r2">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
         </article>
         <article class="mod-card" id="songbook-autoplay">
-          <figure class="card-media">
-            <a class="card-visual" aria-label="Watch video for Songbook Autoplay on PeerTube" href="https://peertbdzl.duckdns.org/w/8S3X2UApJgFtAPJhjhC7tA">
-              <img src="assets/songbook.webp" width="960" height="540" alt="Zelda’s Lullaby highlighted in the Ocarina songbook">
-              <span class="watch-badge"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch video</span>
-            </a>
-            <figcaption class="created-date">Created <time datetime="2026-11-07">Nov 7, 2026</time></figcaption>
-          </figure>
+          <figure class="card-image"><a class="capture-link watch-thumb" href="https://peertbdzl.duckdns.org/w/8S3X2UApJgFtAPJhjhC7tA" aria-label="Watch preview for Songbook Autoplay on PeerTube"><img loading="lazy" decoding="async" src="assets/songbook.webp" width="960" height="540" alt="Zelda’s Lullaby highlighted in the Ocarina songbook"><span class="watch-cue"><svg class="icon" aria-hidden="true"><use href="#play"/></svg> Watch preview</span></a><a class="capture-zoom still-zoom" href="assets/songbook.webp" data-capture="Songbook Autoplay" aria-label="Enlarge screenshot for Songbook Autoplay">+</a></figure>
           <div class="card-body">
-            <p class="card-meta"><span>Ocarina</span><data class="card-downloads" value="70">70 downloads</data><span class="version">v1.0.2</span></p>
+            <p class="card-meta"><span>Ocarina</span><data class="card-downloads" value="103">103 downloads</data><span class="version">v1.0.2</span></p>
             <h3>Songbook Autoplay</h3>
             <p>Play a learned song right from the songbook. Draw the Ocarina, hold ZL, select a song with A, then release ZL.</p>
+            <p class="created-date">Added Created <time datetime="2026-11-07">Nov 7, 2026</time></p>
             <div class="card-actions">
-              <div class="platform-downloads" role="group" aria-label="Songbook Autoplay downloads">
-                <a class="button button-download" aria-label="Lichii build 366 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 366</a>
-                <a class="button button-download" aria-label="Fritchii v6.2 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.2</a>
-                <a class="button button-download" aria-label="Triforce and Longshot download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
-                <a class="button button-download" aria-label="Hookshot v3.0.2 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
-                <a class="button button-download button-test" aria-label="Switch 2 hardware test download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
-              </div>
+              <div class="zip-control"><a class="button primary-zip" hidden><svg class="icon" aria-hidden="true"><use href="#download"/></svg><span></span></a><details class="zip-options" open><summary>All platform ZIPs</summary><div class="platform-downloads" role="group" aria-label="Songbook Autoplay downloads">
+                <a data-platform="lichii" class="button button-download" aria-label="Lichii build 410 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Lichii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Lichii build 410</a>
+                <a data-platform="fritchii" class="button button-download" aria-label="Fritchii v6.5 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Fritchii.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Fritchii v6.5</a>
+                <a data-platform="windows" class="button button-download" aria-label="Triforce and Longshot download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/mod-collection-2026-11-18/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Triforce.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Triforce / Longshot</a>
+                <a data-platform="hookshot" class="button button-download" aria-label="Hookshot v3.0.2 download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Hookshot.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Hookshot v3.0.2</a>
+                <a data-platform="switch" class="button button-download button-test" aria-label="Switch 2 hardware test download for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/songbook-autoplay-v1.0.2/OoT-Remake-Songbook-Autoplay-v1.0.2-Game1.1.1-Switch2-Hardware-Test.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Switch 2 hardware test</a>
+              </div></details></div>
               <a class="text-link" aria-label="Release notes for Songbook Autoplay" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/songbook-autoplay-v1.0.2">Release notes <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
             </div>
           </div>
@@ -243,7 +223,7 @@
     <section class="community" aria-labelledby="community-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow"><span class="diamond"></span> Community mods</p>
+
           <h2 id="community-title">Community mods used in testing</h2>
         </div>
       </div>
@@ -287,7 +267,7 @@
     <section class="install" id="install" aria-labelledby="install-title">
       <div class="section-heading">
         <div>
-          <p class="eyebrow"><span class="diamond"></span> Setup guide</p>
+
           <h2 id="install-title">Install by platform</h2>
         </div>
       </div>
@@ -299,7 +279,8 @@
         <a class="text-link" href="#install-hookshot">Hookshot (legacy)</a>
         <a class="text-link" href="#install-switch-2">Switch 2 hardware test</a>
       </nav>
-      <h3 class="guide-heading" id="install-triforce">Triforce v0.8.0 on Windows</h3>
+      <div class="guide-panels">
+<details class="guide" open><summary><h3 class="guide-heading" id="install-triforce">Triforce v0.8.0 on Windows</h3></summary><div class="guide-content">
       <div class="platform-guide">
         <p>Build OoT Remake 1.1.1 with <a class="text-link" href="https://triforceproject.com/">Triforce Setup</a> first. Use manager v0.1.6 for the tested Triforce v0.8.0 collection. <a class="text-link" href="https://git.triforceproject.com/triforce/source">Triforce source code</a></p>
         <a class="button button-download" aria-label="Download Triforce Mod Manager v0.1.6 beta" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/triforce-mod-manager-v0.1.6/Triforce-Mod-Manager-v0.1.6-Windows.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Download v0.1.6 (beta)</a>
@@ -310,7 +291,8 @@
         </ol>
         <p>The live <strong>Terminal</strong> opens on Play. Use <strong>Cancel build</strong> to stop before the new profile is applied.</p>
       </div>
-      <h3 class="guide-heading" id="install-longshot">Longshot v3.2.0 on Windows</h3>
+      </div></details>
+<details class="guide" open><summary><h3 class="guide-heading" id="install-longshot">Longshot v3.2.0 on Windows</h3></summary><div class="guide-content">
       <div class="platform-guide">
         <p>Build OoT Remake 1.1.1 with the <a class="text-link" href="https://longshot.magicbean.dev/download/">official Longshot Launcher</a>. The manager detects the installed stable build and requires the x64 <a class="text-link" href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0">.NET 8 Desktop Runtime</a>.</p>
         <a class="button button-download" aria-label="Download Longshot Mod Manager v0.1.3 beta" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/longshot-mod-manager-v0.1.3/Longshot-Mod-Manager-v0.1.3-Windows.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Download v0.1.3 (beta)</a>
@@ -321,8 +303,9 @@
         </ol>
         <p><strong>Export for built-in Mods</strong> prepares a separate folder for the official loader. The export report lists packages that require the manager.</p>
       </div>
-      <h3 class="guide-heading" id="install-lichii">Lichii build 366 and Fritchii v6.2</h3>
-      <p class="install-requirements">Use Dynamic FPS with the full collection on <a class="text-link" href="https://github.com/zortos293/Lichii/releases/tag/build-366">Lichii build 366</a>. The separate FPS Unlock conflicts with Songbook Autoplay. On <a class="text-link" href="https://github.com/Frizti/Fritchii/releases/tag/fritchii-v6.2">Fritchii v6.2</a>, the main High Refresh mode works and the additional High Refresh fixes are skipped. Start with a 60 FPS cap.</p>
+      </div></details>
+<details class="guide"><summary><h3 class="guide-heading" id="install-lichii">Lichii build 410 and Fritchii v6.5</h3></summary><div class="guide-content">
+      <p class="install-requirements">Use Dynamic FPS with the full collection on <a class="text-link" href="https://github.com/zortos293/Lichii/releases/tag/build-410">Lichii build 410</a>. The separate FPS Unlock conflicts with Songbook Autoplay. On <a class="text-link" href="https://github.com/Frizti/Fritchii/releases/tag/fritchii-v6.5">Fritchii v6.5</a>, the main High Refresh mode works and the additional High Refresh fixes are skipped. Start with a 60 FPS cap.</p>
       <ol class="steps">
         <li>
           <h3>Open the mod folder</h3>
@@ -342,9 +325,10 @@
         <p>Replace the existing copy when updating. Keep separate mod folders for Lichii and Fritchii when using platform-specific ZIPs.</p>
         <p>To uninstall, close the game and remove the named mod folder.</p>
       </div>
-      <h3 class="guide-heading" id="install-hookshot">Hookshot v3.0.2 on Windows (legacy)</h3>
+      </div></details>
+<details class="guide"><summary><h3 class="guide-heading" id="install-hookshot">Hookshot v3.0.2 on Windows (legacy)</h3></summary><div class="guide-content">
       <div class="platform-guide">
-        <p>Get Hookshot Builder from the <a class="text-link" href="https://hookshot.notrexed.dev/">official project site</a>. The manager needs the x64 <a class="text-link" href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0">.NET 8 Desktop Runtime</a> and looks for the game in <code>%USERPROFILE%\Games\Hookshot</code>. For another location, set <code>HOOKSHOT_MANAGER_INSTALL</code> to the game folder before opening the manager.</p>
+        <p>Start with an existing working Hookshot v3.0.2 installation. The manager needs the x64 <a class="text-link" href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0">.NET 8 Desktop Runtime</a> and looks for the game in <code>%USERPROFILE%\Games\Hookshot</code>. For another location, set <code>HOOKSHOT_MANAGER_INSTALL</code> to the game folder before opening the manager.</p>
         <p>Use Manager v0.1.2 for the tested Hookshot v3.0.2 collection, including the dedicated Arrow Recovery ZIP.</p>
         <a class="button button-download" href="https://github.com/ripDZL/OOT-Remake-Mods/releases/download/hookshot-mod-manager-v0.1.2/Hookshot-Mod-Manager-v0.1.2-Windows.zip"><svg class="icon" aria-hidden="true"><use href="#download"/></svg> Download manager v0.1.2 (beta)</a>
         <ol>
@@ -352,9 +336,10 @@
           <li>Drop the mod ZIP onto the manager. Check the mods you want and click <strong>Play Hookshot</strong>.</li>
           <li>A new set of code mods builds on first use. Clear a checkbox to disable that mod on the next launch.</li>
         </ol>
-        <p>After updating Hookshot through its launcher, click <strong>Play Hookshot</strong> in the manager to rebuild enabled code mods. Your mod selections and saves carry over. A change to the underlying OoT game code may require updated patches.</p>
+        <p>After changing your enabled mods, click <strong>Play Hookshot</strong> to rebuild when needed. These patches target game version 1.1.1.</p>
       </div>
-      <h3 class="guide-heading" id="install-switch-2">Switch 2 hardware test</h3>
+      </div></details>
+<details class="guide"><summary><h3 class="guide-heading" id="install-switch-2">Switch 2 hardware test</h3></summary><div class="guide-content">
       <div class="platform-guide">
         <p><strong>Hardware compatibility is unverified.</strong> These ZIPs use the original game 1.1.1 patches in the <a class="text-link" href="https://github.com/SebaaMG/ns2jb-modloader/releases/tag/v0.3.4">ns2jb-modloader v0.3.4</a> layout. The loader requires a compatible RPC session with filesystem access and the PC setup described in its guide.</p>
         <ol>
@@ -363,13 +348,13 @@
           <li>Run the loader and test one mod at a time. To remove it, delete only that mod's folder and reload.</li>
         </ol>
         <p>One Bunny Hood Speed Boost crash was reported on Switch 2. Its cause is unconfirmed.</p>
-      </div>
+      </div></div></details></div>
     </section>
 
     <section class="support" id="support" aria-labelledby="support-title">
       <div class="support-intro">
-        <h2 id="support-title">BUY ME A COFFEE</h2>
-        <p>All mods are free to download. BUY ME A COFFEE.</p>
+        <h2 id="support-title">Support the project</h2>
+        <p>All mods are free to download. BUY ME A COFFEE</p>
       </div>
       <div class="support-payment">
         <p class="eyebrow">Bitcoin (BTC) address</p>
@@ -386,10 +371,14 @@
     <div class="shell footer-inner">
       <div>
         <p class="footer-title">OoT Remake Mods <span>·</span> ripDZL</p>
-        <p>Unofficial fan project. Mods developed with Codex assistance. Game and captures © Nintendo.</p>
+        <p>Unofficial fan project. Mods developed with Codex assistance. Gameplay captures from the project. Game depicted © Nintendo.</p>
       </div>
       <a class="text-link" href="https://github.com/ripDZL/OOT-Remake-Mods/issues">Report an issue <svg class="icon" aria-hidden="true"><use href="#arrow-out"/></svg></a>
     </div>
   </footer>
+  <dialog class="capture-dialog" id="capture-viewer" aria-labelledby="capture-name">
+    <div class="viewer-header"><h2 id="capture-name"></h2><button class="button" type="button" id="close-capture" autofocus>Close</button></div>
+    <img id="capture-full" alt="">
+  </dialog>
 </body>
 </html>
