@@ -586,60 +586,38 @@ code {
   font-size: .77rem;
 }
 .card-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2px 15px;
+  display: grid;
+  gap: 6px;
 }
 .card-actions .text-link {
-  justify-content: flex-start;
+  justify-self: start;
   font-size: .83rem;
   min-height: 34px;
 }
-.zip-control {
-  display: grid;
-  gap: 5px;
-  width: 100%;
-  min-width: 0;
-  margin-block: 3px 0;
-}
-.primary-zip {
-  justify-self: start;
-  justify-content: flex-start;
-  color: var(--accent-ink);
-  background: var(--accent);
-  border-color: var(--accent);
-  font-weight: 730;
-}
-.zip-options {
-  min-width: 0;
-}
-.zip-options summary {
+.download-label {
   color: var(--muted);
-  cursor: pointer;
-  min-height: 31px;
-  padding-block: 5px;
   font-size: .8rem;
-  font-weight: 650;
-}
-.zip-options summary:hover {
-  color: var(--accent);
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
-.zip-options[open] .platform-downloads {
-  margin-bottom: 8px;
+  font-weight: 670;
 }
 .platform-downloads {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 6px;
-  width: 100%;
 }
 .platform-downloads .button {
-  overflow-wrap: anywhere;
+  justify-content: flex-start;
+  min-height: 44px;
+  padding-inline: 9px;
+  text-align: start;
 }
-.button-test {
+.platform-downloads .button-test {
+  grid-column: 1 / -1;
   background: transparent;
+}
+.platform-downloads .is-platform-match {
+  color: var(--accent-ink);
+  background: var(--accent);
+  border-color: var(--accent);
 }
 
 .community-list {
