@@ -1,4 +1,6 @@
-<h1 align="center">Ocarina of Time Remake Mods</h1>
+<h1 align="center">
+  <a href="https://ripdzl.github.io/OOT-Remake-Mods/#mods"><img src="docs/assets/forest-journal-banner.webp" width="920" alt="Ocarina of Time Remake Mods"></a>
+</h1>
 
 <p align="center">
   Equipment, movement, and ocarina mods for the Nintendo Switch 2 remake.
@@ -6,20 +8,29 @@
 
 <p align="center">
   <a href="#compatibility"><img src="https://img.shields.io/badge/Game_version-1.1.1-3d6b54" alt="Requires game version 1.1.1"></a>
-  <a href="https://github.com/ripDZL/OOT-Remake-Mods/releases"><img src="https://img.shields.io/github/downloads/ripDZL/OOT-Remake-Mods/total?label=Release%20downloads&amp;color=35658a" alt="Total GitHub release downloads, including mod managers"></a>
-  <a href="#installation"><img src="https://img.shields.io/badge/Install-Platform_guides-806127" alt="Installation guides by platform"></a>
+  <a href="https://github.com/ripDZL/OOT-Remake-Mods/releases"><img src="https://img.shields.io/github/downloads/ripDZL/OOT-Remake-Mods/total?label=Release%20downloads&amp;color=80591f&amp;labelColor=152a20" alt="Total GitHub release downloads, including mod managers"></a>
 </p>
 
 <p align="center">
-  <strong><a href="https://ripdzl.github.io/OOT-Remake-Mods/#mods">Browse &amp; download mods</a></strong>
-</p>
-
-<p align="center">
-  <a href="https://ripdzl.github.io/OOT-Remake-Mods/#lens-and-mask"><img src="docs/assets/lens-and-mask.webp" alt="Link wears the Bunny Hood while the purple Lenses of Truth effect is active" width="760"></a><br>
-  <sub>Lens and Mask · In-game capture</sub>
+  <a href="https://ripdzl.github.io/OOT-Remake-Mods/#mods"><img src="docs/assets/forest-journal-browse.webp" width="178" alt="Browse the mod catalog"></a>
+  <a href="#installation"><img src="docs/assets/forest-journal-installation.webp" width="106" alt="Installation"></a>
+  <a href="#compatibility"><img src="docs/assets/forest-journal-compatibility.webp" width="116" alt="Tested builds"></a>
 </p>
 
 ## Gameplay mods
+
+<table>
+  <tr>
+    <td width="50%">
+      <a href="https://ripdzl.github.io/OOT-Remake-Mods/#classic-ledge-jump"><img src="docs/assets/ledge-jump.webp" width="440" alt="Link jumps down a stone stairway in Kakariko Village"></a><br>
+      <strong>Classic Ledge Jump</strong>
+    </td>
+    <td width="50%">
+      <a href="https://ripdzl.github.io/OOT-Remake-Mods/#lens-and-mask"><img src="docs/assets/lens-and-mask.webp" width="440" alt="Link wears the Bunny Hood inside the purple Lens of Truth effect"></a><br>
+      <strong>Lens and Mask</strong>
+    </td>
+  </tr>
+</table>
 
 | Mod | What it changes | Release notes |
 | :-- | :-- | :-- |
@@ -32,18 +43,24 @@
 
 ## Installation
 
-Use **game version 1.1.1** and choose the ZIP for your platform from the [mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods).
+Use **game version 1.1.1** and choose the ZIP for your platform. [Mod catalog](https://ripdzl.github.io/OOT-Remake-Mods/#mods)
 
-- **Triforce v0.8.0 and Longshot v3.2.0 on Windows.** Build the base game first. Drop the shared Triforce / Longshot ZIPs into your manager, enable the mods, and click **Play**. Both managers show build progress in a live terminal and let you cancel a running build. [Triforce Manager v0.1.6 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.6) · [Longshot Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/longshot-mod-manager-v0.1.3)
-- **Legacy Hookshot v3.0.2 on Windows.** Use the Hookshot ZIPs with [Hookshot Mod Manager v0.1.2 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.2).
-- **Lichii build 366 and Fritchii v6.2.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
+| Tested Windows build | Mod manager | Setup |
+| :-- | :-- | :-- |
+| Triforce v0.8.0 | [Triforce Manager v0.1.6 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.6) | [Triforce setup](https://ripdzl.github.io/OOT-Remake-Mods/#install-triforce) |
+| Longshot v3.2.0 | [Longshot Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/longshot-mod-manager-v0.1.3) | [Longshot setup](https://ripdzl.github.io/OOT-Remake-Mods/#install-longshot) |
+
+Build the base game first. Drop the shared Triforce / Longshot ZIPs into your manager, enable the mods, and click **Play**. Both managers show build progress in a live terminal and let you cancel a running build.
+
+- **Legacy Hookshot v3.0.2 on Windows.** If you already have a working Hookshot v3.0.2 build, use the Hookshot ZIPs with [Hookshot Mod Manager v0.1.2 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/hookshot-mod-manager-v0.1.2).
+- **Lichii build 410 and Fritchii v6.5.** Extract the matching ZIP into the game's mod folder, then enable it in the emulator. [Emulator setup guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-lichii)
 - **Switch 2 hardware tests.** Select releases have dedicated test ZIPs. Physical console compatibility is unverified. [Hardware test guide](https://ripdzl.github.io/OOT-Remake-Mods/#install-switch-2)
 
 ## Compatibility
 
-The shared Windows ZIPs loaded together on Triforce v0.8.0 and Longshot v3.2.0. Live tests verified the code patches, arrow recovery and Bunny Hood toggles on both. Earlier Hookshot and emulator tests also exercised mask and Lens controls, ledge jumps and Songbook Autoplay.
+The shared Windows ZIPs loaded together on Triforce v0.8.0 and Longshot v3.2.0. Live tests verified the code patches, arrow recovery and Bunny Hood toggles on both. The same six mods loaded together on Lichii build 410 and Fritchii v6.5, with the same arrow and Bunny Hood checks. Earlier Hookshot and emulator tests also exercised mask and Lens controls, ledge jumps and Songbook Autoplay.
 
-| Mod | Triforce v0.8.0 / Longshot v3.2.0 | Hookshot v3.0.2 (legacy) | Lichii 366 | Fritchii v6.2 | Switch 2 |
+| Mod | Triforce v0.8.0 / Longshot v3.2.0 | Hookshot v3.0.2 (legacy) | Lichii 410 | Fritchii v6.5 | Switch 2 |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | TOTK-style Arrow Recovery | v0.0.7 | v0.0.7 | v0.0.8 | v0.0.7 | — |
 | Lens and Mask | v1.0.1 | v1.0.1 | v1.0.2 | v1.0.2 | — |
