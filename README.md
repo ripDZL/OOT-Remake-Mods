@@ -60,6 +60,8 @@ Build the base game first. Drop the shared Triforce / Longshot ZIPs into your ma
 
 The shared Windows ZIPs loaded together on Triforce v0.8.0 and Longshot v3.2.0. Live tests verified the code patches, arrow recovery and Bunny Hood toggles on both. The same six mods loaded together on Lichii build 410 and Fritchii v6.5, with the same arrow and Bunny Hood checks. Earlier Hookshot and emulator tests also exercised mask and Lens controls, ledge jumps and Songbook Autoplay.
 
+Compatibility testing with the full collection is pending on Triforce v0.8.1. [Triforce v0.8.1 release notes](https://git.triforceproject.com/triforce/downloads/releases/tag/v0.8.1)
+
 | Mod | Triforce v0.8.0 / Longshot v3.2.0 | Hookshot v3.0.2 (legacy) | Lichii 410 | Fritchii v6.5 | Switch 2 |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | TOTK-style Arrow Recovery | v0.0.7 | v0.0.7 | v0.0.8 | v0.0.7 | — |
