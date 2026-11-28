@@ -47,7 +47,7 @@ Use **game version 1.1.1** and choose the ZIP for your platform. [Mod catalog](h
 
 | Tested Windows build | Mod manager | Setup |
 | :-- | :-- | :-- |
-| Triforce v0.8.3 | [Triforce Manager v0.1.7 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.7) | [Triforce setup](https://ripdzl.github.io/OOT-Remake-Mods/#install-triforce) |
+| Triforce v0.8.5 | [Triforce Manager v0.1.8 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/triforce-mod-manager-v0.1.8) | [Triforce setup](https://ripdzl.github.io/OOT-Remake-Mods/#install-triforce) |
 | Longshot v3.2.0 | [Longshot Manager v0.1.3 beta](https://github.com/ripDZL/OOT-Remake-Mods/releases/tag/longshot-mod-manager-v0.1.3) | [Longshot setup](https://ripdzl.github.io/OOT-Remake-Mods/#install-longshot) |
 
 Build the base game first. Drop the shared Triforce / Longshot ZIPs into your manager, enable the mods, and click **Play**. Both managers show build progress in a live terminal and let you cancel a running build.
@@ -58,11 +58,11 @@ Build the base game first. Drop the shared Triforce / Longshot ZIPs into your ma
 
 ## Compatibility
 
-The shared Windows ZIPs loaded together on Triforce v0.8.3 and Longshot v3.2.0. Live tests verified the code patches, arrow recovery and Bunny Hood toggles on both. The same six mods loaded together on Lichii build 410 and Fritchii v6.5, with the same arrow and Bunny Hood checks. Earlier Hookshot and emulator tests also exercised mask and Lens controls, ledge jumps and Songbook Autoplay.
+The shared Windows ZIPs loaded together on Triforce v0.8.5 and Longshot v3.2.0. Live tests verified the code patches, arrow recovery and Bunny Hood toggles on both. The same six mods loaded together on Lichii build 410 and Fritchii v6.5, with the same arrow and Bunny Hood checks. Earlier Hookshot and emulator tests also exercised mask and Lens controls, ledge jumps and Songbook Autoplay.
 
-Triforce Manager v0.1.7 keeps Triforce’s job-barrier optimization working with the adapted HUD of Time v1.0 on Triforce v0.8.3. [Triforce v0.8.3 release notes](https://git.triforceproject.com/triforce/downloads/releases/tag/v0.8.3)
+Triforce Manager v0.1.8 keeps Triforce’s job-barrier optimization working with the adapted HUD of Time v1.0 on Triforce v0.8.5. [Triforce v0.8.5 release notes](https://git.triforceproject.com/triforce/downloads/releases/tag/v0.8.5)
 
-| Mod | Triforce v0.8.3 / Longshot v3.2.0 | Hookshot v3.0.2 (legacy) | Lichii 410 | Fritchii v6.5 | Switch 2 |
+| Mod | Triforce v0.8.5 / Longshot v3.2.0 | Hookshot v3.0.2 (legacy) | Lichii 410 | Fritchii v6.5 | Switch 2 |
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | TOTK-style Arrow Recovery | v0.0.7 | v0.0.7 | v0.0.8 | v0.0.7 | — |
 | Lens and Mask | v1.0.1 | v1.0.1 | v1.0.2 | v1.0.2 | — |
